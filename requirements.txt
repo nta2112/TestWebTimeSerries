@@ -6,3 +6,4 @@ matplotlib
 torch
 scikit-learn
 yfinance
+tensorflow
