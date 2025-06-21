@@ -1,11 +1,9 @@
---upgrade pip
---no-cache-dir
 
-rich==13.7.1
-streamlit==1.46.0
-pandas==2.2.3
-numpy==1.26.0
-matplotlib==3.9.2
-tensorflow==2.15.0
-scikit-learn==1.5.2
-yfinance==0.2.63
+
+pip
+streamlit
+pandas
+numpy
+matplotlib
+scikit-learn
+yfinance
