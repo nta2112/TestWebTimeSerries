@@ -3,19 +3,18 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import load_model
+from keras.models import load_model  # Sử dụng keras độc lập
 from sklearn.preprocessing import MinMaxScaler
 import yfinance as yf
 from datetime import datetime, timedelta
-import os
 import warnings
 
 warnings.filterwarnings("ignore")
 
-# Load model và scaler
+# Load model từ file .keras
 @st.cache_resource
 def load_cnn_model():
-    model = load_model("model_stock.keras")  # Đường dẫn tới file CNN đã huấn luyện
+    model = load_model("model_stock.keras")
     scaler = MinMaxScaler()
     return model, scaler
 
